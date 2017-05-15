@@ -1,0 +1,18 @@
+.demo1-panel {
+  position: relative;
+  font-size: 0;
+  width: 6000px;
+  height: 100%;
+  left: 0px;
+  transition: all 0.5s ease;
+  -webkit- transition: all 0.5s linear;
+}
+.demo1-panel .pic-box {
+  display: inline-block;
+  width: 800px;
+  height: 100%;
+}
+.demo1-panel .picture {
+  width: 800px;
+  height: 100%;
+}
