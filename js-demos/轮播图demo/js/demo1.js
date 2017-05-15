@@ -1,9 +1,8 @@
+// 获取左右两个箭头对象
 var arrowLeft = document.getElementById("arrowLeft");
 var arrowRight = document.getElementById("arrowRight");
 // move变量用于记录当前图片的位置，偏移量
 var offset=0;
-// onclick 与 addeventlistener区别
-//addeventlisterner 中的fn传参数写法
 // 为两个按钮添加事件
 arrowLeft.addEventListener("click",function(arrowType){movePicture("arrowLeft")},false);
 arrowRight.addEventListener("click",function(arrowType){movePicture("arrowRight")},false);
@@ -33,3 +32,6 @@ function movePicture(arrowType){
 		dp.style.left=offset+"px";
 	}
 }
+
+// 本次收获onclick 与 addeventlistener区别
+//addeventlisterner中的fn传参数写法
