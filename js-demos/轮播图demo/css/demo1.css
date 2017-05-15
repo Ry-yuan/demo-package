@@ -4,8 +4,9 @@
   width: 6000px;
   height: 100%;
   left: 0px;
-  transition: all 0.5s ease;
-  -webkit- transition: all 0.5s linear;
+  transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -os-transition: all 1s linear;
 }
 .demo1-panel .pic-box {
   display: inline-block;

@@ -1,8 +1,5 @@
-*/node_module/
-
-*/package.json
-
-*/less/
-
-*/gulpfile.js
+node_modules/
+less/
+package.json
+gulpfile.js
 
