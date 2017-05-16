@@ -3,9 +3,19 @@ var arrowLeft = document.getElementById("arrowLeft");
 var arrowRight = document.getElementById("arrowRight");
 // move变量用于记录当前图片的位置，偏移量
 var offset=0;
-// 为两个按钮添加事件
+// 获得容器对象
+var container = document.getElementById("md-container");
+// 为两个按钮添加click事件
 arrowLeft.addEventListener("click",function(arrowType){movePicture("arrowLeft")},false);
 arrowRight.addEventListener("click",function(arrowType){movePicture("arrowRight")},false);
+// 定时器：setInterval()
+var Interval = setInterval("arrowRight.click()",3000);
+container.onmouseover = function(){
+	clearInterval(Interval);
+}
+container.onmouseout = function(){
+	Interval = setInterval("arrowRight.click()",3000);
+}
 // 图片移动函数，参数箭头类型，用于分辨左右箭头
 function movePicture(arrowType){
 	var dp = document.getElementById("demo1Panel");
@@ -32,6 +42,5 @@ function movePicture(arrowType){
 		dp.style.left=offset+"px";
 	}
 }
-
 // 本次收获onclick 与 addeventlistener区别
 //addeventlisterner中的fn传参数写法
