@@ -1,10 +1,10 @@
 // 获取左右两个箭头对象
 var arrowLeft = document.getElementById("arrowLeft");
 var arrowRight = document.getElementById("arrowRight");
+// 获得图片容器对象
+var container = document.getElementById("md-container");
 // move变量用于记录当前图片的位置，偏移量
 var offset=0;
-// 获得容器对象
-var container = document.getElementById("md-container");
 // 为两个按钮添加click事件
 arrowLeft.addEventListener("click",function(arrowType){movePicture("arrowLeft")},false);
 arrowRight.addEventListener("click",function(arrowType){movePicture("arrowRight")},false);
@@ -21,6 +21,7 @@ function movePicture(arrowType){
 	var dp = document.getElementById("demo1Panel");
 	var picLists = dp.getElementsByTagName("li");
 	// 左箭头时执行
+	// 判断是否是最前一张
 	if(arrowType == "arrowRight"){
 		if(offset==(picLists.length-1)*-800){
 			offset = 0;
@@ -28,10 +29,10 @@ function movePicture(arrowType){
 		else{
 			offset -=800;	
 		}
-		// 通过改变ul框的left来实现移动
-		dp.style.left=offset+"px";
+		
 	}
 	// 右箭头时执行
+	// 判断是否到了最后一张
 	if(arrowType == "arrowLeft"){
 		if(offset == 0){
 			offset = (picLists.length-1)*-800;
@@ -39,8 +40,12 @@ function movePicture(arrowType){
 		else{
 			offset +=800;
 		}
-		dp.style.left=offset+"px";
 	}
+	// 通过改变ul框的left来实现移动
+	dp.style.left=offset+"px";
 }
-// 本次收获onclick 与 addeventlistener区别
-//addeventlisterner中的fn传参数写法
+
+/*本次收获：
+on事件句柄 与 addeventlistener区别
+addeventlisterner中的fn传参数写法
+*/
