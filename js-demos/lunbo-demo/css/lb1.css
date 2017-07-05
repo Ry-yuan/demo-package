@@ -4,16 +4,16 @@
   width: 6000px;
   height: 100%;
   left: 0px;
-  transition: all .5s linear;
-  -webkit-transition: all .5s linear;
-  -os-transition: all .5s linear;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -os-transition: all 0.5s linear;
 }
 .demo1-panel .pic-box {
   display: inline-block;
-  width: 800px;
+  width: 1000px;
   height: 100%;
 }
 .demo1-panel .picture {
-  width: 800px;
+  width: 1000px;
   height: 100%;
 }

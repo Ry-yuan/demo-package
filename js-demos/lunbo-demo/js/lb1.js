@@ -23,11 +23,11 @@ function movePicture(arrowType){
 	// 左箭头时执行
 	// 判断是否是最前一张
 	if(arrowType == "arrowRight"){
-		if(offset==(picLists.length-1)*-800){
+		if(offset==(picLists.length-1)*-1000){
 			offset = 0;
 		}
 		else{
-			offset -=800;	
+			offset -=1000;	
 		}
 		
 	}
@@ -35,10 +35,10 @@ function movePicture(arrowType){
 	// 判断是否到了最后一张
 	if(arrowType == "arrowLeft"){
 		if(offset == 0){
-			offset = (picLists.length-1)*-800;
+			offset = (picLists.length-1)*-1000;
 		}
 		else{
-			offset +=800;
+			offset +=1000;
 		}
 	}
 	// 通过改变ul框的left来实现移动
