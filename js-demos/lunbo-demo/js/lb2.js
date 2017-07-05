@@ -7,6 +7,9 @@ var arrowLeft = document.getElementById("arrowLeft");
 var arrowRight = document.getElementById("arrowRight");
 // 绑定点击函数
 var index = 0;
+var pointBox = document.getElementById("point-box");
+var points = pointBox.getElementsByTagName("li");
+// 左右箭头添加事件
 arrowLeft.addEventListener("click",function(){
 	index--;
 	changeImage();
@@ -19,6 +22,7 @@ arrowRight.addEventListener("click",function(){
 // 设定定时器
 var Interval = setInterval("arrowRight.click()",3000);
 container.onmouseover = function(){
+	// 清除定时器
 	clearInterval(Interval);
 }
 container.onmouseout = function(){
@@ -32,11 +36,11 @@ function changeImage(){
 	if(index<0){
 		index=pics.length-1;
 	}
-	var i=0;
-	for(i=0;i<pics.length;i++){
+	for(var i=0;i<pics.length;i++){
 		pics[i].style.opacity="0";
+		points[i].style.backgroundColor="#ccc";
 	}
 	pics[index].style.opacity="1";
+	points[index].style.backgroundColor="#f58220"
 }
-
 // 关键点：使用opacity来实现隐藏和显示的效果，通过配合使用css3中的transition的过渡效果来达到渐变
