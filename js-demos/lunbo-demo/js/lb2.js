@@ -43,4 +43,12 @@ function changeImage(){
 	pics[index].style.opacity="1";
 	points[index].style.backgroundColor="#f58220"
 }
+// 为每一个下标原点添加点击事件，跳转到对应的图片
+for(var k = 0 ; k<points.length ; k++){
+	points[k].index = k;
+	points[k].onclick = function(){
+		index = this.index;
+		changeImage();
+	}
+}
 // 关键点：使用opacity来实现隐藏和显示的效果，通过配合使用css3中的transition的过渡效果来达到渐变
