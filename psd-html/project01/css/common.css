@@ -1,0 +1,153 @@
+.cleanfloat {
+  zoom: 1;
+}
+.cleanfloat:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+}
+.md-container {
+  background-color: #2b3a41;
+}
+.md-header {
+  width: 100%;
+  height: 75px;
+}
+.md-header .md-nav {
+  text-align: right;
+  height: 100%;
+}
+.md-header .md-nav .nav-logo {
+  position: absolute;
+  margin-top: 10px;
+  width: 247px;
+  height: 86px;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+}
+.md-header .md-nav .nav-list {
+  display: inline-block;
+  margin-top: 25px;
+  margin-left: 20px;
+  color: #d1d3d5;
+  font-size: 16x;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+.md-header .md-nav .nav-icon {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+}
+.md-header .md-nav .icon1 {
+  margin-left: 56px;
+  background-image: url(../images/icon-f.png);
+}
+.md-header .md-nav .icon2 {
+  background-image: url(../images/icon-ff.png);
+}
+.md-footer {
+  height: 100px;
+}
+.md-footer .md-footer-mag {
+  margin-top: 30px;
+  height: 340px;
+  background-color: #8e9098;
+}
+.md-footer .md-footer-mag .update-mag {
+  float: left;
+  margin-top: 30px;
+  width: 310px;
+}
+.md-footer .md-footer-mag .update-mag .footer-update-mag {
+  margin-top: 20px;
+  color: #fff;
+}
+.md-footer .md-footer-mag .update-mag .footer-update-mag .update-data {
+  color: #000;
+}
+.md-footer .md-footer-mag .footer-head .head-logo {
+  float: left;
+  width: 30px;
+  height: 28px;
+}
+.md-footer .md-footer-mag .footer-head .footer-head-text {
+  float: left;
+  margin-left: 20px;
+  display: block;
+  font-size: 20px;
+  color: #fff;
+}
+.md-footer .md-footer-mag .signup-mag {
+  float: left;
+  margin-top: 30px;
+  margin-left: 30px;
+  padding-left: 40px;
+  border-left: 4px dashed #ccc;
+  border-right: 4px dashed #ccc;
+  width: 310px;
+  height: 280px;
+}
+.md-footer .md-footer-mag .signup-mag .email-info {
+  margin-top: 30px;
+  color: #fff;
+}
+.md-footer .md-footer-mag .signup-mag .email-title {
+  margin-top: 30px;
+  font-weight: bold;
+}
+.md-footer .md-footer-mag .signup-mag .email-text {
+  width: 280px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.md-footer .md-footer-mag .signup-mag .email-submit-btn {
+  float: right;
+  margin-right: 30px;
+  margin-top: 20px;
+  width: 88px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  background-color: #8eca40;
+  border-radius: 5px;
+}
+.md-footer .contact-mag {
+  float: left;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.md-footer .contact-mag .contact-list {
+  margin-top: 15px;
+}
+.md-footer .contact-mag .contact-list .contact-icon {
+  display: inline-block;
+}
+.md-footer .contact-mag .contact-list .contact-text {
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  margin-left: 10px;
+}
+.md-footer .md-follow {
+  height: 66px;
+  background-color: #b9babe;
+}
+.md-footer .md-follow .made-by {
+  float: left;
+  line-height: 66px;
+  font-size: 12px;
+}
+.md-footer .md-follow .follow-text {
+  float: right;
+  line-height: 66px;
+  font-size: 20px;
+  color: #4e960c;
+}
+.md-footer .md-follow .follow-text .follow-us {
+  margin-right: 20px;
+}
