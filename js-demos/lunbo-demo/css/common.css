@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li,
+ol {
+  list-style-type: none;
+}
+.md-container {
+  position: relative;
+  overflow: hidden;
+  margin: 0px auto;
+  width: 1000px;
+  height: 500px;
+}
+.arrow-box {
+  background-color: #fff;
+  opacity: 0.5;
+  margin-top: -31px;
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  height: 63px;
+  z-index: 1000;
+}
+.arrow-box:hover {
+  opacity: 0.8;
+}
+.arrow-left {
+  top: 50%;
+  left: 0px;
+}
+.arrow-left i {
+  display: block;
+  width: 50px;
+  height: 63px;
+  background: url(../images/icon-arrow.png) no-repeat;
+}
+.arrow-right {
+  top: 50%;
+  right: 0px;
+}
+.arrow-right i {
+  display: block;
+  width: 50px;
+  height: 63px;
+  background: url(../images/icon-arrow.png) no-repeat;
+  background-position: -50px 0px;
+}
+.point-box {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -60px;
+  width: 120px;
+  height: 20px;
+  text-align: center;
+}
+.point-box .point {
+  display: inline-block;
+  margin-left: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  background-color: #ccc;
+}
+.point-box .point1 {
+  background-color: #f58220;
+}
