@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>lazyload demo</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+</head>
+
+<body>
+    <p class="title">图片懒加载演示(jquery-lazyload.js)</p>
+    <div class="container">
+        <div class="box"><img class="lazy" data-original="images/p1.jpg"></div>
+        <div class="box"><img class="lazy" data-original="images/p2.jpg"></div>
+        <div class="box"><img class="lazy" data-original="images/p3.jpg"></div>
+        <div class="box"><img class="lazy" data-original="images/p4.jpg"></div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $("img.lazy").lazyload({
+            // 图片出现效果
+            effect: "fadeIn",
+            //距离其xx px时就加载。
+            threshold: 300,
+            // 添加事件
+            // event: "click",
+            // 找到 20 个不在可见区域的图片时才停止搜索
+            failure_limit: 20
+        });
+    })
+    </script>
+</body>
+
+</html>

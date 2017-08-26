@@ -9,11 +9,11 @@
 </head>
 
 <body>
-    <div id="md-container" class="md-container" style="margin-top:1000px;">
-        <img class="lazy picture pic1" data-original="images/picture1.jpg" alt="">
-        <img class="lazy picture pic2" data-original="images/picture2.jpg" alt="">
-        <img class="lazy picture pic3" data-original="images/picture3.jpg" alt="">
-        <img class="lazy picture pic4" data-original="images/picture4.jpg" alt="">
+    <div id="md-container" class="md-container">
+        <img class=" picture pic1" src="images/picture1.jpg" alt="">
+        <img class=" picture pic2" src="images/picture2.jpg" alt="">
+        <img class=" picture pic3" src="images/picture3.jpg" alt="">
+        <img class=" picture pic4" src="images/picture4.jpg" alt="">
         <div id="arrowLeft" class="arrow-box arrow-left"><i class="md-arrow"></i></div>
         <div id="arrowRight" class="arrow-box  arrow-right"><i class="md-arrow"></i></div>
         <ul id="point-box" class="point-box">
@@ -24,29 +24,6 @@
         </ul>
     </div>
     <script type="text/javascript" src="js/lb2.js"></script>
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
-    <!-- <script type="text/javascript" src="js/echo.min.js"></script> -->
-    <script type="text/javascript">
-    $(function() {
-        $("img.lazy").lazyload({
-            // 图片出现效果
-            effect: "fadeIn",
-            //距离其xx px时就加载。
-            // threshold: 100,
-            // 添加事件
-            event: "mouseove sporty"
-                // 找到 20 个不在可见区域的图片时才停止搜索
-                // failure_limit: 20000,
-                // container: $("#md-container")
-        });
-    })
-
-    /*  echo.init({
-          offset: 500, //离可视区域多少像素的图片可以被加载
-          // 　　throttle: 1000 //图片延时多少毫秒加载
-      });*/
-    </script>
 </body>
 
 </html>
