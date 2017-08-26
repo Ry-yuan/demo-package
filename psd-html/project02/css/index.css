@@ -1,0 +1,175 @@
+.index-banner {
+  width: 100%;
+  height: 570px;
+  background: url('../images/index-banner.jpg') no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.index-banner .banner-text {
+  background: url('../images/index-banner-text.png') no-repeat;
+  width: 776px;
+  height: 110px;
+  margin: 0px auto;
+  margin-top: 208px;
+}
+.index-banner .banner-txt {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+.index-banner .banner-txt .line {
+  margin-bottom: 4px;
+  width: 40px;
+  height: 1px;
+  display: inline-block;
+  border-top: 1px solid #fff;
+}
+.index-banner .banner-txt .line-l {
+  margin-right: 36px;
+}
+.index-banner .banner-txt .line-r {
+  margin-left: 36px;
+}
+.index-menu {
+  border-top: 5px solid #f34949;
+}
+.index-menu .menu-logo {
+  margin: 0 auto;
+  height: 62px;
+  width: 156px;
+  line-height: 62px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  background-color: #f34949;
+}
+.index-menu .menu-logo:after {
+  display: block;
+  content: "";
+  border-left: 78px solid  #f34949;
+  border-right: 78px solid  #f34949;
+  border-bottom: 10px solid #fff;
+}
+.index-lists {
+  margin-top: 92px;
+  overflow: hidden;
+}
+.index-lists .list-box {
+  width: 1500px;
+}
+.index-lists .list-item {
+  margin-right: 116px;
+  margin-bottom: 54px;
+  float: left;
+  width: 492px;
+}
+.index-lists .list-item .list-mgs {
+  float: left;
+}
+.index-lists .list-item .list-mgs a {
+  font-size: 16px;
+  font-weight: bold;
+}
+.index-lists .list-item .list-mgs .list-info {
+  font-size: 12px;
+}
+.index-lists .list-item .line {
+  vertical-align: middle;
+  display: inline-block;
+  width: 192px;
+  border: 1px solid #ccc;
+}
+.index-lists .list-item .list-price {
+  display: inline-block;
+  float: right;
+  font-style: 16px;
+  font-weight: bold;
+}
+.index-panel {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.index-panel .header {
+  font-size: 20px;
+  font-weight: bold;
+}
+.index-panel .header .btn-group {
+  width: 100px;
+  height: 10px;
+  display: inline-block;
+  float: right;
+}
+.index-panel .header .btn-group .btn {
+  width: 10px;
+  height: 10px;
+  display: block;
+  float: left;
+  border-radius: 10px;
+  background-color: #dedede;
+  margin-right: 10px;
+}
+.index-panel .header .btn-group .ativity {
+  background-color: #9b9b9b;
+}
+.index-panel .pics-box {
+  margin-top: 80px;
+}
+.index-panel .panel-list {
+  margin-top: 80px;
+  width: 1500px;
+}
+.index-panel .panel-list .p-item {
+  margin-right: 60px;
+  width: 230px;
+  height: 268px;
+  float: left;
+}
+.index-panel .panel-list .p-item .pics {
+  width: 230px;
+  height: 200px;
+}
+.index-panel .panel-list .pics-mgsbox {
+  margin-top: 30px;
+}
+.index-panel .panel-list .pics-mgsbox .pics-mgs {
+  display: inline-block;
+  float: left;
+  font-weight: bold;
+  color: #555;
+}
+.index-panel .panel-list .pics-mgsbox .pics-price {
+  display: inline-block;
+  float: right;
+  color: #555;
+}
+.index-panel .panel-list .pics-mgsbox .star-group {
+  margin-top: 10px;
+}
+.index-panel .panel-list .pics-mgsbox .star-group .star {
+  float: left;
+  width: 12px;
+  height: 13px;
+  background: url(../images/star.png) no-repeat;
+}
+.index-panel .panel-list .pics-mgsbox .star-group .no-star {
+  float: left;
+  width: 12px;
+  height: 13px;
+  background: url(../images/star.png) no-repeat;
+  background-position: 0 -13px;
+}
+.index-panel .pics-col {
+  float: left;
+  width: 366px;
+  height: 434px;
+}
+.index-panel .pics-col .pics-1 {
+  width: 100%;
+  height: 100%;
+}
+.index-panel .pics-col .pics-2 {
+  display: inline-block;
+  float: left;
+  width: 366px;
+  height: 217px;
+}
