@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>圣杯布局</title>
+</head>
+<style type="text/css">
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: #fae;
+}
+
+.container {
+    overflow: hidden;
+    padding-left: 200px;
+    padding-right: 300px;
+}
+
+
+/* .container:after { content: " "; clear: both; display: table; }
+ */
+
+.main {
+    float: left;
+    width: 100%;
+    height: 200px;
+    background-color: #ada;
+}
+
+.left {
+    position: relative;
+    left: -200px;
+    float: left;
+    margin-left: -100%;
+    width: 200px;
+    height: 200px;
+    background-color: #abc;
+}
+
+.right {
+    position: relative;
+    right: -300px;
+    float: left;
+    margin-left: -300px;
+    width: 300px;
+    height: 200px;
+    background-color: #adc;
+}
+</style>
+
+<body>
+    <header class="header">头部内容</header>
+    <div class="container">
+        <!-- 优先写中心部分，因为优先渲染。 -->
+        <div class="main">中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分中心内容部分</div>
+        <div class="left">左侧内容部分</div>
+        <div class="right">右侧内容部分</div>
+    </div>
+</body>
+
+</html>
