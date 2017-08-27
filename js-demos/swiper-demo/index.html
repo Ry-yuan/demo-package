@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>swiper demo</title>
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+</head>
+<style type="text/css">
+.swiper-container {
+    width: 1100px;
+    height: 300px;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+p { /* font-family: 'Quicksand', sans-serif; */ /* font-family: 'Josefin Sans', sans-serif; */ /* font-family: 'Dancing Script', cursive; */ font-family: 'Gloria Hallelujah', cursive; }
+
+</style>
+
+<body>
+    <!-- <p>hello world</p> -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="swiper-lazy" data-src="images/picture1.jpg"></div>
+            <div class="swiper-slide"><img class="swiper-lazy" data-src="images/picture2.jpg"></div>
+            <div class="swiper-slide"><img class="swiper-lazy" data-src="images/picture3.jpg"></div>
+            <div class="swiper-slide"><img class="swiper-lazy" data-src="images/picture4.jpg"></div>
+            <div class="swiper-slide"><img class="swiper-lazy" data-src="images/picture2.jpg"></div>
+            <div class="swiper-slide"><img class="swiper-lazy" data-src="images/picture3.jpg"></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- 如果需要滚动条 -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+    <script>
+    var mySwiper = new Swiper('.swiper-container', {
+        // direction: 'vertical',
+        // 循环
+        loop: true,
+        // 懒加载
+        lazyLoading: true,
+
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+
+        // 如果需要前进后退按钮
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        // 一组的张数
+        slidesPerGroup: 2,
+        // 一次显示的张数
+        slidesPerView: 2,
+        // 每一张的间隔
+        spaceBetween: 20,
+        // 如果需要滚动条
+        scrollbar: '.swiper-scrollbar'
+    })
+    </script>
+</body>
+
+</html>
