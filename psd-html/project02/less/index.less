@@ -1,0 +1,187 @@
+.bg(@c:#f00){
+	background-color:@c;
+}
+// 主页banner
+.index-banner{
+	width: 100%;
+	height: 570px;
+	background:url('../images/index-banner.jpg') no-repeat;
+	background-size:cover;
+	overflow:hidden;
+	.banner-text{
+		background:url('../images/index-banner-text.png') no-repeat;
+		width: 776px;
+		height: 110px;
+		margin:0px auto;
+		margin-top: 208px;
+	}
+	.banner-txt{
+		margin-top :20px;
+		text-align: center;
+		color: #fff;
+		.line{
+			margin-bottom: 4px;
+			width: 40px;
+			height: 1px;
+			display: inline-block;
+			border-top:1px solid #fff;
+		}
+		.line-l{
+			margin-right: 36px;
+		}
+		.line-r{
+			margin-left: 36px;
+		}
+	}
+}
+// 主页菜单图标
+.index-menu{
+	border-top: 5px solid #f34949;
+	.menu-logo{
+		margin: 0 auto;
+		height: 62px;
+		width: 156px;
+		line-height: 62px;
+		color: #fff;
+		font-size: 20px;
+		text-align: center;
+		background-color: #f34949;
+		&:after{
+			display:block;
+			content: "";
+			border-left: 78px solid  #f34949;
+			border-right:78px solid  #f34949;
+			border-bottom:10px solid #fff;
+		}
+	}
+}
+// 主页商品列表
+.index-lists{
+	margin-top: 92px;
+	overflow: hidden;
+	.list-box{
+		width: 1500px;
+	}
+	.list-item{
+		margin-right: 116px;
+		margin-bottom:54px;
+		float: left;
+		width:492px;
+		.list-mgs{
+			float: left;
+			a{
+				font-size:16px;
+				font-weight:bold;
+			}
+			.list-info{
+				font-size:12px;
+			}
+		}
+		.line{
+			vertical-align: middle;
+			display: inline-block;
+			width:192px;
+			border: 1px solid #ccc;
+		}
+		.list-price{
+			display: inline-block;
+			float: right;
+			font-style: 16px;
+			font-weight: bold;
+		}
+	}
+}
+// 主页装载图片的面板
+.index-panel{
+	margin-top:200px;
+	margin-bottom:200px;
+	// 面板标题
+	.header{
+		font-size: 20px;
+		font-weight: bold;
+		// 切换按钮
+		.btn-group{
+			width: 100px;
+			height: 10px;
+			display: inline-block;
+			float: right;
+			.btn{
+				width: 10px;
+				height: 10px;
+				display: block;
+				float: left;
+				border-radius:10px;
+				background-color:#dedede;
+				margin-right: 10px;
+			}
+			.ativity{
+				background-color: #9b9b9b;
+			}
+		}
+	}
+	// 图片盒子
+	.pics-box{
+		margin-top:80px;
+	}
+	.panel-list{
+		margin-top: 80px;
+		width:1500px;
+		.p-item{
+			margin-right: 60px;
+			width:230px;
+			height:268px;
+			float:left;
+			.pics{
+				width:230px;
+				height: 200px;
+			}
+		}
+		.pics-mgsbox{
+			margin-top:30px;
+			.pics-mgs{
+				display: inline-block;
+				float:left;
+				font-weight:bold;
+				color:#555;
+			}
+			.pics-price{
+				display:inline-block;
+				float:right;
+				color:#555;
+			}
+			.star-group{
+				margin-top:10px;
+				.star{
+					float:left;
+					width: 12px;
+					height: 13px;
+					background: url(../images/star.png) no-repeat;
+				}
+				.no-star{
+					float:left;
+					width:12px;
+					height: 13px;
+					background: url(../images/star.png) no-repeat;
+					background-position: 0 -13px;
+				}
+			}
+		}
+	}
+	.pics-col{
+		float: left;
+		width:366px;
+		height:434px;
+		.pics-1{
+			width:100%;
+			height: 100%;
+		}
+		.pics-2{
+			display: inline-block;
+			float: left;
+			width: 366px;
+			height: 217px;
+		}
+	}
+}
+
+

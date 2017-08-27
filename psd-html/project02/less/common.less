@@ -1,0 +1,59 @@
+.bg(@c:#f00){
+	background-color:@c;
+}
+// 公共头部
+.public-header{
+	height:110px;
+	// .bg();
+	// 头部图标
+	.header-logo{
+		float:left;
+		margin-top: 40px;
+		width:82px;
+		height: 28px;
+		background: url(../images/logo-header.png) no-repeat;
+	}
+	// 头部导航
+	.header-nav{
+		float: right;
+		margin-top: 44px;
+		font-size: 14px;
+		.item{
+			float:left;
+			margin-left: 50px;
+		}
+	}
+
+}
+// 公共中间容器
+.public-container{
+	// postision:relative;
+	height: 100%;
+	margin: 0 auto;
+	width:1100px;
+}
+// 公共底部
+.public-footer{
+	overflow: hidden;
+	background-color: #3b3b3b;
+	height: 318px;
+	.footer-list{
+		margin-right: 100px;
+		margin-top:95px;
+		float:left;
+		width: 200px;
+		height: 170px;
+		line-height: 1.8;
+		color:#fff;
+	}
+	.footer-list:last-child{
+		margin-right: 0;
+	}
+	.footer-logo{
+		width:81px;
+		height: 30px;
+		margin-bottom:30px;
+		background: url(../images/logo-footer.png) no-repeat;
+	}
+
+}
