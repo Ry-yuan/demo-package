@@ -1,10 +1,17 @@
 var htmlWebpackPlugin = require('html-webpack-plugin');
 var path = require('path');
+var webpack = require('webpack');
 module.exports = {
-    entry: './src/app.js',
+    entry: ['webpack/hot/dev-server', './src/app.js'],
     output: {
         path: __dirname + '/dist',
         filename: 'js/[name].bundle.js'
+    },
+    devServer: {
+        contentBase: "./dist",
+        historyApiFallback: true,
+        inline: true
+            // hot: true
     },
     module: {
         rules: [{
@@ -53,7 +60,7 @@ module.exports = {
         }, {
             test: /\.(.png|jpg|gif|svg)$/i,
             use: [
-                'url-loader?limit=2000',
+                'url-loader?limit=20000',
                 'image-webpack-loader'
             ]
         }]
@@ -64,6 +71,7 @@ module.exports = {
             filename: 'index.html',
             inject: 'body',
             title: 'wabpack demo',
-        })
+        }),
+        new webpack.HotModuleReplacementPlugin()
     ]
 }
