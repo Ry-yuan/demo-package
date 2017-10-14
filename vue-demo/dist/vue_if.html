@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>vue_if test</title>
+</head>
+<style type="text/css">
+ul li {
+    list-style-type: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+.btn-box {
+    float: left;
+}
+
+.btn-box input {
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.m-box {
+    margin-left: 200px;
+    float: left;
+    /* position: absolute; */
+    width: 800px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.box1 {
+    background-color: #ddc;
+}
+
+.box2 {
+    background-color: #acc;
+}
+
+.box3 {
+    background-color: #aff;
+}
+</style>
+
+<body>
+    <h1>vue-if实现模块的转换</h1>
+    <div id="app">
+        <ul class="btn-box">
+            <li>
+                <input type="submit" value="1" @click="key = 1"></input>
+            </li>
+            <li>
+                <input type="submit" value="2" @click="key = 2"></input>
+            </li>
+            <li>
+                <input type="submit" value="3" @click="key = 3"></input>
+            </li>
+        </ul>
+        <div>
+            <div class="m-box box1" v-if="key === 1">module1</div>
+            <div class="m-box box2" v-if="key === 2">module2</div>
+            <div class="m-box box3" v-if="key === 3">module3</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/vue.min.js"></script>
+    <script type="text/javascript">
+    new Vue({
+        el: '#app',
+        data: {
+            //定义一个变量，能够在实例范围内使用
+            key: 1
+        },
+        methods: {}
+    })
+    </script>
+</body>
+
+</html>
