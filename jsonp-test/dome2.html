@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jsonp test</title>
+</head>
+
+<body>
+    <h1>jsonp 测试页面jQuery版</h1>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(function () {
+            $.ajax({
+                //請求連接
+                url: "http://112.74.51.234/data/jsonData01.js",
+                type: 'GET', //jsonp 类型下只能使用GET,不能用POST,这里不写默认为GET
+                dataType: 'jsonp', //指定为jsonp类型
+                jsonp: 'callback', //服务器端获取回调函数名的key
+                jsonpCallback: 'callback', //回调函数名
+                success: function (data) {
+                    var str = JSON.stringify(data);
+                    alert(str);
+                },
+                error: function () {
+                    alert('error');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
