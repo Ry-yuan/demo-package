@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>流动布局</title>
+</head>
+<style>
+    h2,
+    p {
+        text-align: center;
+    }
+
+    .box {
+        margin: 0 auto;
+        /* 相对于整个浏览器的宽度 80% */
+        width: 80%;
+        border: 1px solid #000;
+    }
+
+    .box:after {
+        content: '.';
+        height: 0;
+        visibility: hidden;
+        display: block;
+        clear: both;
+    }
+    /* 为了设置边框和边距不用计算百分比，方便，但也增加了div数量 */
+
+    .box-wrapper {
+        border: 1px solid blue;
+        /* margin-left:100px; */
+        height: 100%;
+    }
+
+    .box-left-wrapper {
+        margin-right: 100px;
+    }
+    /* 左边栏 */
+
+    .left {
+        float: left;
+        width: 80%;
+        height: 200px;
+    }
+
+    .right {
+        float: right;
+        width: 20%;
+        height: 300px;
+    }
+</style>
+
+<body>
+    <h2>流式布局</h2>
+    <p>相比于固定布局，流动布局可以随着浏览器窗口变化而变化。核心使用百分比</p>
+    <p>拖动窗口，布局大小跟着变化，也是实现响应式的一部分重要内容</p>
+    <div class="box">
+        <div class="left">
+            <!-- 里面加一层div为了设置边框时不用计算边框的百分比 -->
+            <div class="box-wrapper box-left-wrapper">左边栏</div>
+        </div>
+        <div class="right">
+            <div class="box-wrapper">右边栏</div>
+        </div>
+    </div>
+</body>
+
+</html>

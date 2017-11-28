@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浮动布局实现三列</title>
+</head>
+<style>
+    .wrapper {
+        margin: 0 auto;
+        width: 960px;
+        border: 1px  solid #000;
+    }
+
+    .wrapper:after {
+        content: '.';
+        height: 0;
+        visibility: hidden;
+        display: block;
+        clear: both;
+    }
+    .left{
+        float: left;
+        width: 300px;
+        height: 200px;
+        border: 1px solid #f00;
+    }
+    .main{
+        float: right;
+        width: 500px;
+        overflow: hidden;
+        /* border: 1px solid #000; */
+    }
+    .main-left{
+        float:left;
+        width: 200px;
+        height: 300px;
+        border: 1px  solid #00f;
+    }
+    .main-right{
+        float: right;
+        width: 200px;
+        height: 200px;
+        border: 1px  solid #0f0;
+    }
+    h1,p{
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1>浮动三列布局实现</h1>
+    <p>浮动的三列布局：其实是两列布局的拓展，在两列布局中有left和main，在mian中再加入两列布局，从而实现三列布局</p>
+    <div class="wrapper">
+
+        <div class="left">
+            左边栏
+        </div>
+        <div class="main">
+            <div class="main-left">主体左边</div>
+            <div class="main-right">主体右边</div>
+        </div>
+
+    </div>
+</body>
+
+</html>

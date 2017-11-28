@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>两列布局</title>
+</head>
+<style>
+    h2,
+    p {
+        text-align: center;
+    }
+
+    .box {
+        margin: 0 auto;
+        width: 960px;
+        border: 1px solid red;
+    }
+    /* 清除浮动 */
+
+    .box:after {
+        content: '.';
+        height: 0;
+        visibility: hidden;
+        display: block;
+        clear: both;
+    }
+
+    .left {
+        width: 40%;
+        height: 200px;
+        float: left;
+        border: 1px solid #ccc;
+    }
+
+    .right {
+        width: 40%;
+        height: 300px;
+        float: right;
+        border: 1px solid #ccc;
+    }
+</style>
+
+<body>
+    <h2>使用浮动来实现两列布局</h2>
+    <p>使用浮动来布局，关键是清除浮动，当前最好的办法是使用伪类after的方法。</p>
+    <div class="box">
+        <div class="left">左边</div>
+        <div class="right">右边</div>
+    </div>
+</body>
+
+</html>
