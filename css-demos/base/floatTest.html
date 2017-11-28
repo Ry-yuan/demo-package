@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>floatTest</title>
+</head>
+<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.box1{
+		width: 200px;
+		border: 2px solid #0f0;
+		/* overflow: hidden; */
+	}
+	.box1 .child-1{
+		float: left;
+		height: 100px;
+		width: 100px;
+		background: #fd0;
+	}
+	.box1 .child-2{
+		float: left;
+		height: 100px;
+		width: 100px;
+		background: #fba;
+	}
+	.box2{
+		width: 200px;
+		height: 150px;
+		border: 2px solid #00f;
+		/* clear: both; */
+	}
+</style>
+<body>
+	<h1>浮动测试demo</h1>
+	<div class="box1">
+		<div class="child-1">child-1</div>
+		<div class="child-2">child-2</div>
+		<div style="clear: both;"></div>
+	</div>
+	<div class="box2"></div>
+</body>
+</html>

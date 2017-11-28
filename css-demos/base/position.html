@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>position</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.box{
+		margin-top: 30px;
+		margin-left: 20px;
+		width: 200px;
+		height: 200px;
+		border: 2px solid #00f;
+		position: relative;
+	}
+	.box .box-chd{
+		margin-top: 20px;
+		margin-left: 10px;
+		width: 150px;
+		height: 150px;
+		border:2px solid #daa;
+		position: relative;
+	}
+	.box .box-chd .box-chd-chd{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		background-color: #dd0;
+		width: 100px;
+		height: 100px;
+	}
+	.box .box-chd .b2{
+		display: inline-block;
+		background-color: red;
+		top: 10px;
+	}
+</style>
+<body>
+	<h1>定位position布局</h1>
+	<div class="box">
+		<div class="box-chd">
+			<div class="box-chd-chd b1"></div>
+			<div class="box-chd-chd b2"></div>
+		</div>
+	</div>
+</body>
+</html>

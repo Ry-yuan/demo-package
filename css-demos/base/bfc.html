@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bfc</title>
+</head>
+<style type="text/css">
+*{
+	margin: 0px;
+	padding: 0px;
+}
+	.container1{
+		/* 通过overflow：hidden可以创建bfc */
+		overflow: hidden;
+		/* border: 1px solid #000; */
+		background-color: red;
+		width: 300px;
+	}
+	.sub1{
+		margin: 20px 0px 20px 0px;
+		background-color: #dea;
+	}
+
+	.newbfc{
+		overflow: hidden;
+	}
+	.container2{
+		overflow: hidden;
+		width: 200px;
+	}
+	.box{
+		float: left;
+		width: 100px;
+		height: 30px;
+		background-color: #daa;
+	}
+</style>
+<body>
+	<p>1.bfc导致的属于同一个bfc中的子元素的margin重叠(Box垂直方向的距离由margin决定。属于同一个BFC的两个相邻Box的margin会发生重叠)</p>
+		<!-- <div class="container1">
+			<div class="sub1">String1</div>
+			<div class="newbfc"><div class="sub1">String2</div></div>
+		</div> -->
+		<div class="container2">
+		<div class="box"></div>
+		<p style="background-color: #eea ;overflow: hidden">sdfadsfdff fffffffds fsfffff sfd  fsdsdfsdf fffffff</p>
+	</div>
+</body>
+</html>
