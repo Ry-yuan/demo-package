@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jsonp test</title>
+</head>
+<style>
+    h1,
+    p {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1>jsonp测试页面基本版</h1>
+    <p>数据在我服务器上请求来的，和本页面不同域</p>
+    <p>利用原生js实现jsonp，请求回来的json数据:</p>
+    <p>原理：定义一个函数callback，动态创建script，利用src属性发送请求，服务器返回带数据的执行函数callback</p>
+    <script>
+        function callback(data) {
+            // console.log(Array.isArray(data));
+            var str = JSON.stringify(data);
+            alert(str);
+        }
+        // jsonp跨域請求,动态创建script函数 
+        function jsonpFunc(url) {
+            //获得body
+            var body = document.getElementsByTagName('body');
+            //创建一个script标签
+            var script = document.createElement('script');
+            //为script添加src
+            script.src = url;
+            //插入body
+            body[0].appendChild(script);
+        }
+        //调用方法
+        jsonpFunc('http://112.74.51.234/jsonp?callback=callback');
+    </script>
+
+    <!-- <script src="http://localhost:3010/jsonp?callback=callback"></script> -->
+</body>
+
+</html>
