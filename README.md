@@ -27,7 +27,7 @@
 (4)定位布局：[点击查看](http://112.74.51.234/demos/css-demo/base/position.html)  
 (5)inline-block布局：[点击查看](http://112.74.51.234/demos/css-demo/base/inline-block.html)  
 (6)流动布局：[点击查看](http://112.74.51.234/demos/css-demo/base/flowlayout.html)
-
+(7)弹性布局（flexbox）：[点击查看](http://112.74.51.234/demos/css-demo/base/flex_1.html)
 ## 四、jsonp-test （jsonp的演示）从自己服务器请求数据，页面在GitHubpage
 * a.demo1 原生js实现的jsonp：[点击查看](http://ry-yuan.me/demos/js-demo/jsonp-test/demo1.html)   
 * b.demo2 利用jquery封装的jsonp：[点击查看](http://ry-yuan.me/demos/js-demo/jsonp-test/demo2.html)  
