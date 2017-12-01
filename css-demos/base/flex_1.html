@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/flex.css" rel="stylesheet">
+    <title>flex布局</title>
+</head>
+
+<body>
+    <h1>一、flex布局测试：外容器属性，可通过开发者工具进行修改测试</h1>
+    <!-- 该容器里可以进行flex布局  兼容ie10+ -->
+    <h3>1.定义flex，容器设置display:flex，webkit系要display: -webkit-box;其内部转化为flex上下文，其子部项目默认水平排列。</h3>
+    <ul class="box">
+        <li class="box-item">1</li>
+        <li class="box-item">2</li>
+        <li class="box-item">3</li>
+    </ul>
+
+    <h3>2.主轴flex-direction 的值有flex-direction: row（默认）|| column || row-reverse || column-reverse。下面的是column垂直排列 </h3>
+    <ul class=" box box1">
+        <li class="box-item">1</li>
+        <li class="box-item">2</li>
+        <li class="box-item">3</li>
+    </ul>
+
+    <h3>3.flex-wrap 的值有flex-wrap: wrap || nowrap（默认） || wrap-reverse; 下面是可换行wrap</h3>
+    <ul class=" box box2">
+        <li class="box-item">1</li>
+        <li class="box-item">2</li>
+        <li class="box-item">3</li>
+        <li class="box-item">4</li>
+        <li class="box-item">5</li>
+        <li class="box-item">6</li>
+        <li class="box-item">7</li>
+        <li class="box-item">8</li>
+    </ul>
+
+    <h3>4.flex-flow是flex-direction和flex-wrap两个属性的速记属性 就是这两个值的简写形式，合并了</h3>
+    <ul class=" box box3">
+        <li class="box-item">1</li>
+        <li class="box-item">2</li>
+        <li class="box-item">3</li>
+        <li class="box-item">4</li>
+        <li class="box-item">5</li>
+        <li class="box-item">6</li>
+        <li class="box-item">7</li>
+        <li class="box-item">8</li>
+    </ul>
+
+    <h3>5.justify-content 属性决定项目在容器中的基于主轴的对齐方式，下面的是center你居中对齐</h3>
+    <ul class=" box box4">
+        <li class="box-item">1</li>
+        <li class="box-item">2</li>
+        <li class="box-item">3</li>
+    </ul>
+
+    <h3>6.align-item 属性决定项目在容器中的基于侧轴的对齐方式，下面的是center你居中对齐，可看做做垂直的justify-content</h3>
+    <ul class="box box5">
+        <li class="box-item">1</li>
+        <li class="box-item">2</li>
+        <li class="box-item">3</li>
+    </ul>
+
+
+    <h1>二、子项目中的属性</h1>
+    <h3>1.order属性，0（默认），排序按照order的值有低排到高</h3>
+    <ul class="box box6">
+        <li class="box-item">1</li>
+        <li class="box-item">2</li>
+        <li class="box-item">3</li>
+    </ul>
+
+    <h3>2.flex-grow属性定义项目的放大比例，0（默认），还可以是其他正值</h3>
+    <ul class="box box7">
+        <li class="box-item">1</li>
+        <li class="box-item">2</li>
+        <li class="box-item">3</li>
+    </ul>
+
+    <h3>3.flex-shrink属性定义了项目的缩小比例，默认为1，0时表示空间不足也不缩小。不能负值。如果空间不足，该项目将缩小</h3>
+    <ul class="box box8">
+        <li class="box-item">1</li>
+        <li class="box-item">2</li>
+        <li class="box-item">3</li>
+    </ul>
+
+    <h3>4.flex-basis属性 长度和|auto（默认）;</h3>
+    <p>定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性， 计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小
+    </p>
+
+
+    <h3>5.flex 是flex-grow , flex-shrink , flex-basis 的速写 ,该属性有两个快捷值：auto (1 1 auto) 和 none (0 0 auto)。</h3>
+    <ul class="box box9">
+        <li class="box-item">1</li>
+        <li class="box-item">2</li>
+        <li class="box-item">3</li>    
+    </ul>  
+
+    <h3>6.align-self属性，对单独的子项目进行对齐，align-self: auto（默认） | flex-start | flex-end | center | baseline | stretch</h3>
+    <ul class="box box10">
+        <li class="box-item">1</li>
+        <li class="box-item">2</li>
+        <li class="box-item">3</li>    
+    </ul>  
+
+</body>
+
+</html>

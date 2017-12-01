@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,p{
+  text-align: center;
+}
+h3 {
+  margin-top: 30px;
+}
+.box li {
+  list-style-type: none;
+}
+.box {
+  display: flex;
+  display: -webkit-flex;
+  height: 200px;
+  /* height: 300px; */
+  border: 1px solid #000;
+}
+.box-item {
+  /* margin: 10px; */
+  width: 200px;
+  height: 50px;
+  background-color: #dca;
+  border: 1px  solid #1af ;
+}
+.box1 {
+  flex-direction: column;
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column-reverse; */
+}
+.box2 {
+  flex-wrap: wrap;
+  /* flex-wrap: nowrap; */
+  /* flex-wrap: wrap-reverse; */
+}
+.box3 {
+  flex-flow: row wrap-reverse;
+}
+.box4 {
+  justify-content: center;
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  /* justify-content: flex-end; */
+  /* justify-content: flex-start; */
+}
+.box5{
+  /* align-items: center; */
+  align-items: flex-end;
+  /* align-items: stretch; */
+  /* 相对于字体 */
+  /* align-items: baseline; */
+}
+.box6 .box-item:nth-child(2){
+  /* 把第二个子项目的order设置为1，它排到了后面 */
+  order: 1;
+  /* order:-1; */
+}
+
+.box7 .box-item:nth-child(1){
+  /* 定义了1，放大 */
+  flex-grow:1;
+}
+
+.box8 .box-item:nth-child(2){
+  flex-shrink: 0;
+}
+.box9 .box-item{
+  /* flex：1（flex-grow,放大了）,1,auto */
+  flex: 1;
+  /* flex:none; */
+}
+.box10 .box-item:nth-child(2){
+  /* 对第二个进行单独设置 */
+  align-self: flex-end;
+}
