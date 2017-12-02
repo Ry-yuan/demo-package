@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jquery源码分析</title>
+</head>
+
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <script src="./jquery-3.2.1.js"></script>
+    <!-- <script src="./index.js"></script> -->
+    <script>
+        // pushStack方法的理解，和end的理解使用
+        // $('div').eq(1).css('background','red').end().css('background','blue');
+        //扩展工具方法
+        $.extend({
+            aaa:'ry',
+            bb:function(){
+                alert("bb");
+            }
+        });
+        console.log($.aaa);
+        // $.bb();
+
+        // 扩展实例方法
+        $.fn.extend({
+            aaa:'hello',
+            bb:function(){alert('aaa')}
+        })
+    </script>
+</body>
+
+</html>
