@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.main1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius:100px;
+    position: relative;
+    animation: main1 5s linear;
+    // 1：keyframes的名字 动画时间duration，动画曲线timing-function ，延迟开始时间delay，循环次数iteration-cout，是否逆向播放
+    -webkit-animation: main1 5s linear 1s infinite ;
+}
+.main2{
+    position: relative;
+    top: 300px;
+    width: 100px;
+    height: 100px;
+    background-color: #1B2F88;
+    border-radius:100px;
+    animation: main2 1s linear;
+    // 1：keyframes的名字 动画时间duration，动画曲线timing-function ，延迟开始时间delay，循环次数iteration-cout，动画是否在下一周期逆向地播放direction
+    -webkit-animation: main2 1s linear 1s infinite ;
+}
+@keyframes main1 {
+    0%{
+        left:0px;    
+    }
+    25%{
+        left:100px;
+    }
+    50%{
+        left: 200px;
+    }
+    75%{
+        left: 300px;
+    }
+    100%{
+        left:0px;
+    }
+}
+@keyframes main2 {
+    0%{
+        left:0px;    
+    }
+    25%{
+        left:100px;
+    }
+    50%{
+        left: 200px;
+    }
+    75%{
+        left: 300px;
+    }
+    100%{
+        left:0px;
+    }
+}
