@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>事件流测试</title>
+</head>
+<style>
+    .box {
+        margin: 0 auto;
+        width: 400px;
+        height: 400px;
+        background-color: #caa;
+    }
+
+    .box p {
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+        background-color: #1aa;
+    }
+
+    .box p span {
+        margin: 0 auto;
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
+    }
+</style>
+
+<body>
+    <div class="box">
+        I am div
+        <p>
+            I am p
+            <span>
+                I am span
+            </span>
+        </p>
+    </div>
+    <script>
+        var box = document.querySelector('.box');
+        var ele_p = document.getElementsByTagName('p')[0];
+        var ele_span = document.getElementsByTagName('span')[0];
+        box.addEventListener('click', function () {
+            console.log('i am box')
+        });
+        ele_p.addEventListener('click', function () {
+            console.log('i am p')
+        });
+        ele_span.addEventListener('click', function (e) {
+            console.log(' i am span');
+            // console.log(e);
+            // e是一个事件对象，通过stopPropagation方法来阻止事件冒泡
+            e.stopPropagation();
+        });
+    </script>
+</body>
+
+</html>
