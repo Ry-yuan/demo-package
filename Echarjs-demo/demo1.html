@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Echar test </title>
+    <script src="https://cdn.bootcss.com/echarts/3.8.5/echarts-en.common.js"></script>
+</head>
+<body>
+    <div id="main" style="width:600px;height:400px;margin:0 auto"></div>
+    <script>
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+        var options = {
+            title:{
+                text:'echar 入门'
+            },
+            tooltip:{},
+            legend:{
+                data:['销量']
+            },
+            xAxis:{
+                data:["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","内裤"]
+            },
+            yAxis:{},
+            series:[{
+                name:'销量',
+                type:'bar',
+                data:[5,20,36,10,10,20]
+            }]
+        };
+        myChart.setOption(options);
+    </script>
+</body>
+</html>
