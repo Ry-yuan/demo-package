@@ -82,16 +82,40 @@ function getNum(){
     return p;
 }
  
-getNum().then(
-    // 第一个fuc处理成功，resolve后的情况，也就是reolve的回调
-    function (data){
-        console.log(data);
-    },
-    // 第二个func处理的是失败的情况，也就是是reject的回调函数
-    function (data){
-        console.log(data);
-    }
-);
-
-
+// getNum().then(
+//     // 第一个fuc处理成功，resolve后的情况，也就是reolve的回调
+//     function (data){
+//         console.log(data);
+//     },
+//     // 第二个func处理的是失败的情况，也就是是reject的回调函数
+//     function (data){
+//         console.log(data);
+//     }
+// );
 // 这里的异步代码使用了setTimeout来模拟，真实的可能有ajax请求，或者是其他的异步操作
+
+
+// 5.catch的使用,相当于then的第二个函数，指定reject的回调.
+// 不同的是如果then中报错了，不会叫停整js程序，而是把错误传给catch执行
+// getNum().then(function(data){
+//     console.log(data);
+//     console.log(a);
+// }).catch(function(reason){
+//     console.log(reason);
+// });
+
+// 6.promise.all的用法
+// all接收一个数组参数，里面的值最终都算返回Promise对象。这样，三个异步操作的并行执行的
+// Promise
+// .all([fn1(), fn2(), fn3()])
+// .then(function(results){
+//     console.log(results);
+// });
+
+
+// 7.Promise.rece()用法
+Promise
+.race([fn1(), fn2(), fn3()])
+.then(function(results){
+    console.log(results);
+});
