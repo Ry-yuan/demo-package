@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="list">
+        <li id="item1">item1</li>
+        <li id="item2">item2</li>
+        <li id="item3">item3</li>
+        <li id="item4">item4</li>
+    </ul>
+    <script>
+        // 1.为全部li绑定事件的情况
+        // window.onload = function () {
+        //     var ulNode = document.getElementById("list");
+        //     var liNodes = ulNode.childNodes || ulNode.children;
+        //     for (var i = 0; i < liNodes.length; i++) {
+        //         liNodes[i].addEventListener('click', function (e) {
+        //             alert(e.target.innerHTML);
+        //         }, false);
+        //     }
+        // }
+
+        // 2.利用事件委托：事件冒泡的应用
+        window.onload = function(){
+            var ulNode = document.getElementById('list');
+            ulNode.addEventListener('click',function(e){
+                e = e || window.event;
+                //e.target 表示事件源，也就是被点击的li
+                // 判断点击的是不是li节点
+                if(e.target.nodeName.toUpperCase() == "LI"){
+                    alert(e.target.innerHTML);
+                };
+            });
+        }
+    </script>
+</body>
+
+</html>
