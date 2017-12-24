@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>数据双向绑定的demo</title>	
+</head>
+<body>
+<input type="text" name="infoInsert"> <input type="button" name="newText" value="FromAjax">
+<p id="infoShow"></p>
+<script type="text/javascript">
+	var obj = {
+		seeYou: 'Hello'
+	};
+	Object.defineProperty(obj, 'infoBind', {
+		get: function () {
+			return this.seeYou;
+		},
+		set: function (newValue) {
+			document.getElementById('infoShow').innerText = newValue;
+			document.getElementsByName('infoInsert')[0].value = newValue;
+		}
+	});
+	document.getElementsByName('infoInsert')[0].addEventListener('keyup', function () {
+		obj.infoBind = this.value;
+	});
+	document.getElementsByName('newText')[0].addEventListener('click', function () {
+		obj.infoBind = 'Hello Panda';
+	});
+</script>
+</body>
+</html>
