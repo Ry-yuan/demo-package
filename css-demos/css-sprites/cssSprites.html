@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>css Sprites</title>
+</head>
+<style type="text/css">
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    overflow: hidden;
+    width: 50px;
+    height: 200px;
+    background-color: #faa755;
+}
+
+.icon {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 40px;
+    height: 30px;
+    background-image: url(icon.png);
+    background-repeat: no-repeat;
+    list-style-type: none;
+}
+
+.icon-issue {
+    background-position: -0 0;
+}
+
+.icon-upload {
+    background-position: 0 -50px;
+}
+
+.icon-passage {
+    background-position: 0 -100px;
+}
+</style>
+
+<body>
+    <ul class="container">
+        <li class="icon icon-issue"></li>
+        <li class="icon icon-upload"></li>
+        <li class="icon icon-passage"></li>
+    </ul>
+</body>
+
+</html>
