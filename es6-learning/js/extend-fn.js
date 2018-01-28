@@ -1,4 +1,6 @@
 // 函数对象扩展
+
+
 //1.允许默认值：es5时用的是||来变通，表示默认值：如y = y || 'world';
 //es6允许了默认：
 function fn(x, y = ' world'){
@@ -44,16 +46,28 @@ let getObj = (id)  => ({id:id,name:'jack'});
 [1,2,3].map(function(x){
         return x*2;
     }
-)
+);
 //箭头写法
 [1,2,3].map(x => x*2);
 
 // 正常函数写法
-var result = values.sort(function (a, b) {
-  return a - b;
-});
+// var result = values.sort(function (a, b) {
+//   return a - b;
+// });
 
 // 箭头函数写法
-var result = values.sort((a, b) => a - b);
+// var result = values.sort((a, b) => a - b);
 
 //箭头函数的this指向的是它外层函数的this，也就是说它的没有自己的this
+
+
+// 6.函数参数解构
+let json ={
+    x:1,
+    y:2
+};
+function fun({x,y}){
+    console.log(x,y);
+}
+fun(json);
+

@@ -1,4 +1,6 @@
 //String对象扩展：
+
+
 //includes()某个字符串是否包含另一个字符串
 var s = 'hello';
 s.includes('he');  //true
