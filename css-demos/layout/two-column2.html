@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>两列布局2</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .left{
+        float:left;
+        width:200px;
+        height: 500px;
+        background-color:red;
+    }
+    .right{
+        /* margin-left:210px; */
+        overflow: auto;
+        height: 500px;
+        background-color: green;
+    }
+</style>
+<body>
+    <h2>右边固定，左边自适应</h2>
+    <p>左边浮动宽度固定，右边overflow：auto触发bfc</p>
+    <p>原因：BFC的区域不会与float box重叠</p>
+    <div class="left"></div>
+    <div class="right"></div>
+</body>
+</html>

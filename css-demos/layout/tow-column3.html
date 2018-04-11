@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        overflow: hidden;
+    }
+    .left {
+        float: left;
+        width: 100%;
+        height: 500px;
+        background-color: red;
+    }
+
+    .right {
+        float: left;
+        /* 左边 */
+        /* margin-left: -100%;*/
+        /* 右边 */
+        margin-left:-200px;
+        width: 200px;
+        height: 500px;
+        background-color: blue;
+    }
+</style>
+
+<body>
+    <h1>在一个bfc中，两设置浮动，右边固定的margin left设置个-100%，就会到左边</h1>
+    <div class="box">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>
