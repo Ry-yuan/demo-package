@@ -20,7 +20,7 @@
     <p>利用原生js实现jsonp，请求回来的json数据:</p>
     <p>原理：定义一个函数callback，动态创建script，利用src属性发送请求，服务器返回带数据的执行函数callback</p>
     <script>
-        
+        // var callback = function(){};
         function callback(data) {
             // console.log(Array.isArray(data));
             var str = JSON.stringify(data);
@@ -36,9 +36,11 @@
             script.src = url;
             //插入body
             body[0].appendChild(script);
+            // window.callback = null;
         }
         //调用方法
-        jsonpFunc('http://112.74.51.234/jsonp?callback=callback');
+        jsonpFunc('http://112.74.51.234/jsonp?callback=callback')
+         
     </script>
 
     <!-- <script src="http://localhost:3010/jsonp?callback=callback"></script> -->
