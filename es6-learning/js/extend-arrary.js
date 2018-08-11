@@ -82,3 +82,24 @@ console.log('---------数组转字符串--------');
 let arr9 = [1,2,3];
 console.log(arr9.toString());
 console.log(arr9.join(''));
+
+// 10赋值
+
+console.log('----赋值----');
+let obj1 = {name:'yuan',age:{x:2,y:4}};
+const arr10 = [1,2,3,4];
+const {name , age}  = obj1;
+const [first]  =  arr10;
+console.log(name,age);
+console.log(first);
+
+// 可以将一个数组或对象解构赋值到新对象中；
+console.log({...arr10});
+console.log({...obj1});
+console.log([...arr10]);
+
+const {age : { x } }=obj1;
+console.log(x);
+
+
+console.log({...obj1,age:{...obj1.age,z:3}});
